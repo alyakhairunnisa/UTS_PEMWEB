@@ -1,0 +1,68 @@
+Nama: Alya Khairunnisa
+Kelas: IF22A
+NIM: 22416255201095
+
+UTS Pemrograman Website
+
+1. Apa yang dimaksud dengan framework pada pengembangan aplikasi?
+
+  jawab :
+
+   Dalam pengembangan aplikasi, "framework" adalah kerangka kerja atau alat bantu yang menyediakan aturan dan struktur dasar untuk memudahkan pembangunan aplikasi. 
+   Sebagian besar pekerjaan umum dan kompleks telah diatur di dalamnya, sehingga pengembang dapat fokus pada bagian khusus yang membuat aplikasi unik, tanpa harus memulai semuanya dari awal.
+   Dengan cara ini, pengembang dapat menghemat waktu dan energi dalam membangun aplikasi.
+   contohnya: bayangin kamu ingin membuat kue coklat dari nol. Jika kamu mulai dari awal, kamu harus cari dan mengukur semua bahan, menentukan resep, dan buat adonan dari awal. 
+   Kalo kamu menggunakan "framework" kue coklat, Sebagian langkah - langkah dasar kayak bahan dasar dan resep sudah tersedia. kamu cuma perlu menambahkan sentuhan pribadi, misalnya, menambahkan kacang atau coklat tambahan.
+
+
+2. Sebutkan tema proyek yang sedang digarap!
+
+  jawab :
+
+  Saya bersama dengan kelompok saya mendapat tema proyek Apotek.
+
+  2.1 Sebutkan anggota dari proyek yang sedang digarap, berikut dengan
+  jobdesk dari masing-masing anggota!
+
+  jawab :
+
+  - Muhammad Jibrail Natadilaga (22416255201274),bertugas sebagai ketua pada proyek ini, bertugas untuk mengerjakan
+    laporan dan Analisis Design Berorientasi Objek.  
+  - Bayu Saputra (22416255201285), bertugas untuk mengerjakan bagian sistem website yang tidak 
+    dilihat oleh pengguna atau biasa disebut sebagai Backend.
+  - Alya Khairunnisa (2241625521095), saya dipercaya untuk mengerjakan tampilan-tampilan pada website
+    atau yang biasa disebut sebagai frontend.
+
+  2.2 Jelaskan permasalahan yang didapat setelah hasil wawancara dengan
+   client, beserta hipotesa solusi yang kalian usung!
+
+   Menurut keterangan dari Narasumber pemilik apotek, apotek miliknya belum memiliki sistem
+   sehingga proses pencatatan transaksi dan pencatatan stok obat yang masuk dan keluar 
+   masih ditulis secara manual di buku. Selain itu untuk pembelian obat, para pembeli masih harus langsung
+   untuk datang ke apotek dan hanya pembeli yang mengenal pemilik apotek saja yang bisa memesan
+   obat melalui Whatsapp pribadi.
+
+   Berdasarkan keterangan narasumber kami berencana untuk membuat sistem website yang 
+   berfungsi untuk:
+
+    1. Membuat sistem yang terbagi menjadi dua hak akses, yaitu hak akses user untuk pembeli dan hak akses
+      admin untuk pegawai apotek.
+
+    2. Akun dengan hak akses user dapat digunakan untuk : 
+      a. Melihat,mencari,dan memfilter daftar stok obat yang tersedia
+      b. Membeli obat secara online
+
+    3. Akun dengan hak akses admin dapat digunakan untuk:
+      a. Menginput stok jenis obat yang masuk obat-obatan beserta dengan tanggal kadaluarsanya
+      b. Melihat,mencari,dan memfilter daftar stok obat yang sudah diinputkan
+      c. Mengubah jumlah stok obat
+      d. Menghapus stok obat
+      e. Melihat rekap transaksi jual-beli obat-obatan
+
+    4. Merekap transaksi secara otomatis
+
+
+
+3. Terdapat file show.php di root proyek yang menghasilkan tabel data produk,
+Didalam nya terdapat fitur “EDIT” dan “HAPUS”. Buatkan fitur “EDIT” dan
+“HAPUS” dan unggah source code di elearning/BOC!
