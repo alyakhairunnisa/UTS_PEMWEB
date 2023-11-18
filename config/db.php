@@ -2,7 +2,7 @@
 
 $DBHOST = 'localhost';
 $DBUSER = 'root';
-$DBPASSWORD = ' ';
+$DBPASSWORD = '';
 $DBNAME = 'pemweb-db';
 
 

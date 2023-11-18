@@ -1,5 +1,6 @@
 <?php 
 session_start();
+$this_doc = dirname(__FILE__);
 if ($_SESSION['role'] != 'admin') {
     echo "
     <script>
@@ -30,12 +31,13 @@ if ($_SESSION['role'] != 'admin') {
 <?php
 require_once("../config/db.php");
 
-$root = "D:/docker/xampp/htdocs";
+// $root = "D:/docker/xampp/htdocs";
 $products = mysqli_query($db_connect,"SELECT * FROM products");
 $row = mysqli_fetch_assoc($products);
 $id = $row['id'];
 $data = mysqli_query($db_connect, "SELECT * FROM products WHERE id = $id");
 $row = mysqli_fetch_assoc($data);
+
 
 if (isset($_POST['update'])) {
     $name = $_POST['name'];
@@ -53,7 +55,8 @@ if (isset($_POST['update'])) {
         exit;
     }
     $randomFilename = time() . '-' . md5(rand()) . '-' . $image;
-    $uploadPath = $_SERVER['DOCUMENT_ROOT'] . '/UTS/upload/' . $randomFilename;
+    $uploadPath = $this_doc.'./../../UTS/upload/' . $randomFilename;
+    // $uploadPath = $_SERVER['DOCUMENT_ROOT'] . '/UTS/upload/' . $randomFilename;
     $upload = move_uploaded_file($tempImage, $uploadPath);
     if ($upload) {
         $updateQuery = "UPDATE products SET 

@@ -1,6 +1,7 @@
 <?php
 
 require './../config/db.php';
+$this_doc = dirname(__FILE__);
 
 if(isset($_POST['submit'])) {
     global $db_connect;
@@ -12,7 +13,8 @@ if(isset($_POST['submit'])) {
 
     $randomFilename = time().'-'.md5(rand()).'-'.$image;
 
-    $uploadPath = $_SERVER['DOCUMENT_ROOT'].'/upload/'.$randomFilename;
+    // $uploadPath = $_SERVER['DOCUMENT_ROOT'].'/upload/'.$randomFilename;
+    $uploadPath = $this_doc.'./../../UTS/upload/'.$randomFilename;
 
     $upload = move_uploaded_file($tempImage,$uploadPath);
 

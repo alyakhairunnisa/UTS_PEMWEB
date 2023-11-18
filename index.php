@@ -20,6 +20,7 @@
                     </div>
                     <div class="form-outline mb-4" >
                         <input type="submit" value="login" name="submit" class="btn btn-primary" >
+                        <a href="register.php" class="btn btn-success" >Register</a>
                     </div>
                 </form>
             </section>
